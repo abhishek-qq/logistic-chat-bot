@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you to make your first order,TO track your order, about how to make changes your orders", "you can fetch your package tracking id, helpline number"],
+         "context": [""]
+        },
+        {"tag": "track_order",
+         "patterns": ["How to track my order?", "location of my package","when i will get my package", "want to track my order" ],
+         "responses": ["enter you package details we will   send your package details wait for the response.     this may take few minutes ","enter the following details you will get   location of your pacakge-- package ID and user ID"],
+         "context": [""]
+        },
+        {"tag": "your_first_order",
+         "patterns": ["want to do order", "i want to order this", "want to order something", "can i make order with creating an account" ],
+         "responses": ["first do login and then select you package and click on place order proceed  with the payment."," no you can not placed order like this you have create an account "],
+         "context": [""]
+        },
+        {"tag": "change_in_order",
+         "patterns": ["want to change my address ", "I want to do some changes in my order", "steps to do changes in order", "do change my address", "want to change my Shipment details" ],
+         "responses": ["please enter your package ID ", "do login in your account click on make changes select shipment address make the required change and the click on save "],
+         "context": [""]
+        },
+        {"tag": "fetch_your_tracking_id",
+         "patterns": ["i want to fetch tracking id of my package"],
+         "responses": [" enter your user id and password and we will get back to you with you tracking ID"],
+         "context": [""]
+        },
+        {"tag": "helpline number",
+         "patterns": ["i want helpline number", "contact informaation", "i want to talk to helpdesk person" ],
+         "responses": ["name of the person : Abhishek mishra      contact number-- 1118004567","name of the person : mr.Anil contact     number-- 1118004787"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "about_section",
+         "patterns": ["tell me something","something about you"],
+         "responses": ["i am bot which is designed for Improving customer-facing operations, and         Supply chain operations"],
+         "context": [""]
+        }
+   ]
+}
